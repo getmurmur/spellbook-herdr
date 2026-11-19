@@ -1,5 +1,7 @@
 # Spellbook for Herdr
 
+![Spellbook for Herdr](preview.png)
+
 [Spellbook](https://spellbook.getmurmur.dev) as a [Herdr](https://herdr.dev) layout: write agent skills with Claude Code beside you, in Herdr's window.
 
 - **Skills** on the left: your drafts in `~/Skills`, newest first. Each one says whether it's installed in Claude Code, or changed since it was. A dot shows when its agent is working or needs you.
@@ -13,7 +15,7 @@
 Needs Herdr, and Claude Code on your PATH.
 
 ```sh
-git clone https://github.com/<you>/spellbook-herdr && cd spellbook-herdr
+git clone https://github.com/getmurmur/spellbook-herdr && cd spellbook-herdr
 sh scripts/link.sh
 ```
 
@@ -59,3 +61,7 @@ HERDR_APP_HOME=/tmp/sb/home HC_SESSION=spellbook-test herdr-app
 - Diff review: an outside change can be reverted as a whole, not chunk by chunk.
 - Renaming a skill from the name field (the folder keeps its name).
 - Files other than `SKILL.md` in the editor, Evals, Share, Publish, Codex and project installs.
+
+## Licence
+
+MIT
