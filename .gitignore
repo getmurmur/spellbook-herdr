@@ -1,0 +1,3 @@
+node_modules
+.DS_Store
+mods/*/gpui-kit.d.ts

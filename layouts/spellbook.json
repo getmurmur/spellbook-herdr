@@ -1,0 +1,73 @@
+{
+  "id": "root",
+  "type": "row",
+  "titlebar": "none",
+  "traffic_lights": [12, 16],
+  "background": "canvas",
+  "terminal_padding": [14, 12],
+  "divider": { "width": 1, "color": "border" },
+  "children": [
+    {
+      "id": "sidebar",
+      "type": "column",
+      "size": { "px": 248 },
+      "min": 180,
+      "max": 400,
+      "background": "chrome",
+      "children": [
+        {
+          "id": "brand",
+          "type": "block",
+          "size": { "px": 46 },
+          "window_drag": true,
+          "content": { "mod": "spellbook", "props": { "view": "library", "part": "brand" } }
+        },
+        {
+          "id": "library",
+          "type": "block",
+          "content": { "mod": "spellbook", "props": { "view": "library" } }
+        }
+      ]
+    },
+    {
+      "id": "skill",
+      "type": "block",
+      "size": { "weight": 3 },
+      "min": 420,
+      "content": { "mod": "spellbook", "props": { "view": "skill" } }
+    },
+    {
+      "id": "agent",
+      "type": "column",
+      "size": { "px": 480 },
+      "min": 320,
+      "max": 900,
+      "background": "chrome",
+      "children": [
+        {
+          "id": "agent-bar",
+          "type": "block",
+          "size": { "px": 46 },
+          "window_drag": true,
+          "content": { "mod": "tabs" }
+        },
+        {
+          "id": "agent-body",
+          "type": "block",
+          "padding": 8,
+          "content": {
+            "tab": "active",
+            "pane": {
+              "gap": 8,
+              "radius": 10,
+              "background": "background",
+              "lone": true,
+              "border": { "width": 1, "color": "border" },
+              "focus": { "width": 1, "color": "accent" }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
